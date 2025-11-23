@@ -1,0 +1,1427 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/tripk/ontologies/2025/10/untitled-ontology-7/"
+     xml:base="http://www.semanticweb.org/tripk/ontologies/2025/10/untitled-ontology-7/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:ontology="http://www.PoliceDepartment01.gr/ontology#">
+    <owl:Ontology rdf:about="http://www.PoliceDepartment01.gr/ontology#"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#ComplaintHandledBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.PoliceDepartment01.gr/ontology#ComplaintHandledBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.PoliceDepartment01.gr/ontology#handlesComplaint"/>
+        <rdfs:domain rdf:resource="http://www.PoliceDepartment01.gr/ontology#Complaint"/>
+        <rdfs:range rdf:resource="http://www.PoliceDepartment01.gr/ontology#Officer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#ComplaintInvolves -->
+
+    <owl:ObjectProperty rdf:about="http://www.PoliceDepartment01.gr/ontology#ComplaintInvolves">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.PoliceDepartment01.gr/ontology#Complaint"/>
+        <rdfs:range rdf:resource="http://www.PoliceDepartment01.gr/ontology#CaseRelatedPerson"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#ComplaintMadeBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.PoliceDepartment01.gr/ontology#ComplaintMadeBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.PoliceDepartment01.gr/ontology#Complaint"/>
+        <rdfs:range rdf:resource="http://www.PoliceDepartment01.gr/ontology#CaseRelatedPerson"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#HasOfficer -->
+
+    <owl:ObjectProperty rdf:about="http://www.PoliceDepartment01.gr/ontology#HasOfficer">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.PoliceDepartment01.gr/ontology#worksIn"/>
+        <rdfs:domain rdf:resource="http://www.PoliceDepartment01.gr/ontology#Department"/>
+        <rdfs:range rdf:resource="http://www.PoliceDepartment01.gr/ontology#Officer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#InterrogationHandledBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.PoliceDepartment01.gr/ontology#InterrogationHandledBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.PoliceDepartment01.gr/ontology#Interrogation"/>
+        <rdfs:range rdf:resource="http://www.PoliceDepartment01.gr/ontology#Officer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#InterrogationHeldIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.PoliceDepartment01.gr/ontology#InterrogationHeldIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.PoliceDepartment01.gr/ontology#Interrogation"/>
+        <rdfs:range rdf:resource="http://www.PoliceDepartment01.gr/ontology#Department"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#InterrogationIncludes -->
+
+    <owl:ObjectProperty rdf:about="http://www.PoliceDepartment01.gr/ontology#InterrogationIncludes">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.PoliceDepartment01.gr/ontology#isInterrogatedIn"/>
+        <rdfs:domain rdf:resource="http://www.PoliceDepartment01.gr/ontology#Interrogation"/>
+        <rdfs:range rdf:resource="http://www.PoliceDepartment01.gr/ontology#CaseRelatedPerson"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#ReceivesComplaint -->
+
+    <owl:ObjectProperty rdf:about="http://www.PoliceDepartment01.gr/ontology#ReceivesComplaint">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.PoliceDepartment01.gr/ontology#Department"/>
+        <rdfs:range rdf:resource="http://www.PoliceDepartment01.gr/ontology#Complaint"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#aliveVictimInterrogatedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.PoliceDepartment01.gr/ontology#aliveVictimInterrogatedIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.PoliceDepartment01.gr/ontology#isInterrogatedIn"/>
+        <rdfs:domain rdf:resource="http://www.PoliceDepartment01.gr/ontology#Alive_Victim"/>
+        <rdfs:range rdf:resource="http://www.PoliceDepartment01.gr/ontology#Interrogation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#arrestsCriminal -->
+
+    <owl:ObjectProperty rdf:about="http://www.PoliceDepartment01.gr/ontology#arrestsCriminal">
+        <rdfs:subPropertyOf rdf:resource="http://www.PoliceDepartment01.gr/ontology#interactsWith"/>
+        <rdfs:domain rdf:resource="http://www.PoliceDepartment01.gr/ontology#Officer"/>
+        <rdfs:range rdf:resource="http://www.PoliceDepartment01.gr/ontology#Criminal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#arrestsSuspect -->
+
+    <owl:ObjectProperty rdf:about="http://www.PoliceDepartment01.gr/ontology#arrestsSuspect">
+        <rdfs:subPropertyOf rdf:resource="http://www.PoliceDepartment01.gr/ontology#interactsWith"/>
+        <rdfs:domain rdf:resource="http://www.PoliceDepartment01.gr/ontology#Officer"/>
+        <rdfs:range rdf:resource="http://www.PoliceDepartment01.gr/ontology#Suspect"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#criminalInterrogatedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.PoliceDepartment01.gr/ontology#criminalInterrogatedIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.PoliceDepartment01.gr/ontology#isInterrogatedIn"/>
+        <rdfs:domain rdf:resource="http://www.PoliceDepartment01.gr/ontology#Criminal"/>
+        <rdfs:range rdf:resource="http://www.PoliceDepartment01.gr/ontology#Interrogation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#handlesCase -->
+
+    <owl:ObjectProperty rdf:about="http://www.PoliceDepartment01.gr/ontology#handlesCase">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.PoliceDepartment01.gr/ontology#isHandledBy"/>
+        <rdfs:domain rdf:resource="http://www.PoliceDepartment01.gr/ontology#Officer"/>
+        <rdfs:range rdf:resource="http://www.PoliceDepartment01.gr/ontology#Case"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#handlesComplaint -->
+
+    <owl:ObjectProperty rdf:about="http://www.PoliceDepartment01.gr/ontology#handlesComplaint">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.PoliceDepartment01.gr/ontology#Officer"/>
+        <rdfs:range rdf:resource="http://www.PoliceDepartment01.gr/ontology#Complaint"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#handlesInterrogation -->
+
+    <owl:ObjectProperty rdf:about="http://www.PoliceDepartment01.gr/ontology#handlesInterrogation">
+        <rdfs:domain rdf:resource="http://www.PoliceDepartment01.gr/ontology#Officer"/>
+        <rdfs:range rdf:resource="http://www.PoliceDepartment01.gr/ontology#Interrogation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#includesInterrogation -->
+
+    <owl:ObjectProperty rdf:about="http://www.PoliceDepartment01.gr/ontology#includesInterrogation">
+        <rdfs:domain rdf:resource="http://www.PoliceDepartment01.gr/ontology#Case"/>
+        <rdfs:range rdf:resource="http://www.PoliceDepartment01.gr/ontology#Interrogation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#interactsWith -->
+
+    <owl:ObjectProperty rdf:about="http://www.PoliceDepartment01.gr/ontology#interactsWith">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.PoliceDepartment01.gr/ontology#Officer"/>
+        <rdfs:range rdf:resource="http://www.PoliceDepartment01.gr/ontology#CaseRelatedPerson"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#involves -->
+
+    <owl:ObjectProperty rdf:about="http://www.PoliceDepartment01.gr/ontology#involves">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.PoliceDepartment01.gr/ontology#isInvolvedIn"/>
+        <rdfs:domain rdf:resource="http://www.PoliceDepartment01.gr/ontology#Case"/>
+        <rdfs:range rdf:resource="http://www.PoliceDepartment01.gr/ontology#CaseRelatedPerson"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#isCriminalOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.PoliceDepartment01.gr/ontology#isCriminalOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.PoliceDepartment01.gr/ontology#isInvolvedIn"/>
+        <rdfs:domain rdf:resource="http://www.PoliceDepartment01.gr/ontology#Criminal"/>
+        <rdfs:range rdf:resource="http://www.PoliceDepartment01.gr/ontology#Case"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#isDeadVictimOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.PoliceDepartment01.gr/ontology#isDeadVictimOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.PoliceDepartment01.gr/ontology#isInvolvedIn"/>
+        <rdfs:domain rdf:resource="http://www.PoliceDepartment01.gr/ontology#Dead_Victim"/>
+        <rdfs:range rdf:resource="http://www.PoliceDepartment01.gr/ontology#Case"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#isHandledBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.PoliceDepartment01.gr/ontology#isHandledBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.PoliceDepartment01.gr/ontology#Case"/>
+        <rdfs:range rdf:resource="http://www.PoliceDepartment01.gr/ontology#Officer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#isInterrogatedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.PoliceDepartment01.gr/ontology#isInterrogatedIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.PoliceDepartment01.gr/ontology#CaseRelatedPerson"/>
+        <rdfs:range rdf:resource="http://www.PoliceDepartment01.gr/ontology#Interrogation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#isInvolvedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.PoliceDepartment01.gr/ontology#isInvolvedIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.PoliceDepartment01.gr/ontology#CaseRelatedPerson"/>
+        <rdfs:range rdf:resource="http://www.PoliceDepartment01.gr/ontology#Case"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#isSuspectOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.PoliceDepartment01.gr/ontology#isSuspectOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.PoliceDepartment01.gr/ontology#isInvolvedIn"/>
+        <rdfs:domain rdf:resource="http://www.PoliceDepartment01.gr/ontology#Suspect"/>
+        <rdfs:range rdf:resource="http://www.PoliceDepartment01.gr/ontology#Case"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#isVictimOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.PoliceDepartment01.gr/ontology#isVictimOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.PoliceDepartment01.gr/ontology#isInvolvedIn"/>
+        <rdfs:domain rdf:resource="http://www.PoliceDepartment01.gr/ontology#Victim"/>
+        <rdfs:range rdf:resource="http://www.PoliceDepartment01.gr/ontology#Case"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#isWitnessOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.PoliceDepartment01.gr/ontology#isWitnessOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.PoliceDepartment01.gr/ontology#isInvolvedIn"/>
+        <rdfs:domain rdf:resource="http://www.PoliceDepartment01.gr/ontology#Witness"/>
+        <rdfs:range rdf:resource="http://www.PoliceDepartment01.gr/ontology#Case"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#suspectInterrogatedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.PoliceDepartment01.gr/ontology#suspectInterrogatedIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.PoliceDepartment01.gr/ontology#isInterrogatedIn"/>
+        <rdfs:domain rdf:resource="http://www.PoliceDepartment01.gr/ontology#Suspect"/>
+        <rdfs:range rdf:resource="http://www.PoliceDepartment01.gr/ontology#Interrogation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#witnessInterrogatedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.PoliceDepartment01.gr/ontology#witnessInterrogatedIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.PoliceDepartment01.gr/ontology#isInterrogatedIn"/>
+        <rdfs:domain rdf:resource="http://www.PoliceDepartment01.gr/ontology#Witness"/>
+        <rdfs:range rdf:resource="http://www.PoliceDepartment01.gr/ontology#Interrogation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#worksIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.PoliceDepartment01.gr/ontology#worksIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.PoliceDepartment01.gr/ontology#Officer"/>
+        <rdfs:range rdf:resource="http://www.PoliceDepartment01.gr/ontology#Department"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#ComplaintHasID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.PoliceDepartment01.gr/ontology#ComplaintHasID">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.PoliceDepartment01.gr/ontology#Complaint"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#InterrogationHasID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.PoliceDepartment01.gr/ontology#InterrogationHasID">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.PoliceDepartment01.gr/ontology#Interrogation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#hasAddress -->
+
+    <owl:DatatypeProperty rdf:about="http://www.PoliceDepartment01.gr/ontology#hasAddress">
+        <rdfs:domain rdf:resource="http://www.PoliceDepartment01.gr/ontology#CaseRelatedPerson"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#hasAge -->
+
+    <owl:DatatypeProperty rdf:about="http://www.PoliceDepartment01.gr/ontology#hasAge">
+        <rdfs:domain rdf:resource="http://www.PoliceDepartment01.gr/ontology#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#hasBadgeNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://www.PoliceDepartment01.gr/ontology#hasBadgeNumber">
+        <rdfs:domain rdf:resource="http://www.PoliceDepartment01.gr/ontology#Officer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#hasDepartmentAddress -->
+
+    <owl:DatatypeProperty rdf:about="http://www.PoliceDepartment01.gr/ontology#hasDepartmentAddress">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.PoliceDepartment01.gr/ontology#Department"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#hasEmail -->
+
+    <owl:DatatypeProperty rdf:about="http://www.PoliceDepartment01.gr/ontology#hasEmail">
+        <rdfs:domain rdf:resource="http://www.PoliceDepartment01.gr/ontology#Officer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#hasGender -->
+
+    <owl:DatatypeProperty rdf:about="http://www.PoliceDepartment01.gr/ontology#hasGender">
+        <rdfs:domain rdf:resource="http://www.PoliceDepartment01.gr/ontology#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#hasID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.PoliceDepartment01.gr/ontology#hasID">
+        <rdfs:domain rdf:resource="http://www.PoliceDepartment01.gr/ontology#Case"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#hasNationality -->
+
+    <owl:DatatypeProperty rdf:about="http://www.PoliceDepartment01.gr/ontology#hasNationality">
+        <rdfs:domain rdf:resource="http://www.PoliceDepartment01.gr/ontology#CaseRelatedPerson"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#hasSalary -->
+
+    <owl:DatatypeProperty rdf:about="http://www.PoliceDepartment01.gr/ontology#hasSalary">
+        <rdfs:domain rdf:resource="http://www.PoliceDepartment01.gr/ontology#Officer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#hasShift -->
+
+    <owl:DatatypeProperty rdf:about="http://www.PoliceDepartment01.gr/ontology#hasShift">
+        <rdfs:domain rdf:resource="http://www.PoliceDepartment01.gr/ontology#Officer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#hasYearsOfExperience -->
+
+    <owl:DatatypeProperty rdf:about="http://www.PoliceDepartment01.gr/ontology#hasYearsOfExperience">
+        <rdfs:domain rdf:resource="http://www.PoliceDepartment01.gr/ontology#Officer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#Alive_Victim -->
+
+    <owl:Class rdf:about="http://www.PoliceDepartment01.gr/ontology#Alive_Victim">
+        <rdfs:subClassOf rdf:resource="http://www.PoliceDepartment01.gr/ontology#Victim"/>
+        <owl:disjointWith rdf:resource="http://www.PoliceDepartment01.gr/ontology#Dead_Victim"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#Assault -->
+
+    <owl:Class rdf:about="http://www.PoliceDepartment01.gr/ontology#Assault">
+        <rdfs:subClassOf rdf:resource="http://www.PoliceDepartment01.gr/ontology#Criminal_Case"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#Case -->
+
+    <owl:Class rdf:about="http://www.PoliceDepartment01.gr/ontology#Case">
+        <rdfs:subClassOf rdf:resource="http://www.PoliceDepartment01.gr/ontology#MyPoliceDepOntology"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.PoliceDepartment01.gr/ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://www.PoliceDepartment01.gr/ontology#CaseRelatedPerson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.PoliceDepartment01.gr/ontology#isHandledBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.PoliceDepartment01.gr/ontology#Officer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#CaseRelatedPerson -->
+
+    <owl:Class rdf:about="http://www.PoliceDepartment01.gr/ontology#CaseRelatedPerson">
+        <rdfs:subClassOf rdf:resource="http://www.PoliceDepartment01.gr/ontology#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#Complaint -->
+
+    <owl:Class rdf:about="http://www.PoliceDepartment01.gr/ontology#Complaint">
+        <rdfs:subClassOf rdf:resource="http://www.PoliceDepartment01.gr/ontology#MyPoliceDepOntology"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.PoliceDepartment01.gr/ontology#ComplaintHandledBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.PoliceDepartment01.gr/ontology#Officer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.PoliceDepartment01.gr/ontology#ComplaintInvolves"/>
+                <owl:someValuesFrom rdf:resource="http://www.PoliceDepartment01.gr/ontology#CaseRelatedPerson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.PoliceDepartment01.gr/ontology#ComplaintMadeBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.PoliceDepartment01.gr/ontology#CaseRelatedPerson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#Criminal -->
+
+    <owl:Class rdf:about="http://www.PoliceDepartment01.gr/ontology#Criminal">
+        <rdfs:subClassOf rdf:resource="http://www.PoliceDepartment01.gr/ontology#CaseRelatedPerson"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#Criminal_Case -->
+
+    <owl:Class rdf:about="http://www.PoliceDepartment01.gr/ontology#Criminal_Case">
+        <rdfs:subClassOf rdf:resource="http://www.PoliceDepartment01.gr/ontology#Case"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.PoliceDepartment01.gr/ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://www.PoliceDepartment01.gr/ontology#Criminal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#Dead_Victim -->
+
+    <owl:Class rdf:about="http://www.PoliceDepartment01.gr/ontology#Dead_Victim">
+        <rdfs:subClassOf rdf:resource="http://www.PoliceDepartment01.gr/ontology#Victim"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#Department -->
+
+    <owl:Class rdf:about="http://www.PoliceDepartment01.gr/ontology#Department">
+        <rdfs:subClassOf rdf:resource="http://www.PoliceDepartment01.gr/ontology#MyPoliceDepOntology"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#Interrogation -->
+
+    <owl:Class rdf:about="http://www.PoliceDepartment01.gr/ontology#Interrogation">
+        <rdfs:subClassOf rdf:resource="http://www.PoliceDepartment01.gr/ontology#MyPoliceDepOntology"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.PoliceDepartment01.gr/ontology#InterrogationHandledBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.PoliceDepartment01.gr/ontology#Officer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.PoliceDepartment01.gr/ontology#InterrogationIncludes"/>
+                <owl:someValuesFrom rdf:resource="http://www.PoliceDepartment01.gr/ontology#CaseRelatedPerson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#Interrogation_Officer -->
+
+    <owl:Class rdf:about="http://www.PoliceDepartment01.gr/ontology#Interrogation_Officer">
+        <rdfs:subClassOf rdf:resource="http://www.PoliceDepartment01.gr/ontology#Officer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#Murder -->
+
+    <owl:Class rdf:about="http://www.PoliceDepartment01.gr/ontology#Murder">
+        <rdfs:subClassOf rdf:resource="http://www.PoliceDepartment01.gr/ontology#Criminal_Case"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#MyPoliceDepOntology -->
+
+    <owl:Class rdf:about="http://www.PoliceDepartment01.gr/ontology#MyPoliceDepOntology"/>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#Officer -->
+
+    <owl:Class rdf:about="http://www.PoliceDepartment01.gr/ontology#Officer">
+        <rdfs:subClassOf rdf:resource="http://www.PoliceDepartment01.gr/ontology#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#Patrol_Officer -->
+
+    <owl:Class rdf:about="http://www.PoliceDepartment01.gr/ontology#Patrol_Officer">
+        <rdfs:subClassOf rdf:resource="http://www.PoliceDepartment01.gr/ontology#Officer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#Person -->
+
+    <owl:Class rdf:about="http://www.PoliceDepartment01.gr/ontology#Person">
+        <rdfs:subClassOf rdf:resource="http://www.PoliceDepartment01.gr/ontology#MyPoliceDepOntology"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#Robbery -->
+
+    <owl:Class rdf:about="http://www.PoliceDepartment01.gr/ontology#Robbery">
+        <rdfs:subClassOf rdf:resource="http://www.PoliceDepartment01.gr/ontology#Criminal_Case"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#Security_Officer -->
+
+    <owl:Class rdf:about="http://www.PoliceDepartment01.gr/ontology#Security_Officer">
+        <rdfs:subClassOf rdf:resource="http://www.PoliceDepartment01.gr/ontology#Officer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#Suspect -->
+
+    <owl:Class rdf:about="http://www.PoliceDepartment01.gr/ontology#Suspect">
+        <rdfs:subClassOf rdf:resource="http://www.PoliceDepartment01.gr/ontology#CaseRelatedPerson"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#Traffic_Case -->
+
+    <owl:Class rdf:about="http://www.PoliceDepartment01.gr/ontology#Traffic_Case">
+        <rdfs:subClassOf rdf:resource="http://www.PoliceDepartment01.gr/ontology#Case"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#Traffic_Officer -->
+
+    <owl:Class rdf:about="http://www.PoliceDepartment01.gr/ontology#Traffic_Officer">
+        <rdfs:subClassOf rdf:resource="http://www.PoliceDepartment01.gr/ontology#Officer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#Victim -->
+
+    <owl:Class rdf:about="http://www.PoliceDepartment01.gr/ontology#Victim">
+        <rdfs:subClassOf rdf:resource="http://www.PoliceDepartment01.gr/ontology#CaseRelatedPerson"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#Witness -->
+
+    <owl:Class rdf:about="http://www.PoliceDepartment01.gr/ontology#Witness">
+        <rdfs:subClassOf rdf:resource="http://www.PoliceDepartment01.gr/ontology#CaseRelatedPerson"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#Alafouzos_Suspect -->
+
+    <owl:NamedIndividual rdf:about="http://www.PoliceDepartment01.gr/ontology#Alafouzos_Suspect">
+        <rdf:type rdf:resource="http://www.PoliceDepartment01.gr/ontology#Suspect"/>
+        <ontology:isSuspectOf rdf:resource="http://www.PoliceDepartment01.gr/ontology#Traffic_Case_04"/>
+        <ontology:suspectInterrogatedIn rdf:resource="http://www.PoliceDepartment01.gr/ontology#Interrogation_04"/>
+        <ontology:hasAddress>Afragkias 95</ontology:hasAddress>
+        <ontology:hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">51</ontology:hasAge>
+        <ontology:hasGender>Male</ontology:hasGender>
+        <ontology:hasNationality>England</ontology:hasNationality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#Aris_Grigoriadis_Suspect -->
+
+    <owl:NamedIndividual rdf:about="http://www.PoliceDepartment01.gr/ontology#Aris_Grigoriadis_Suspect">
+        <rdf:type rdf:resource="http://www.PoliceDepartment01.gr/ontology#Suspect"/>
+        <ontology:isSuspectOf rdf:resource="http://www.PoliceDepartment01.gr/ontology#Assault_Case_03"/>
+        <ontology:isSuspectOf rdf:resource="http://www.PoliceDepartment01.gr/ontology#Traffic_Case_04"/>
+        <ontology:suspectInterrogatedIn rdf:resource="http://www.PoliceDepartment01.gr/ontology#Interrogation_03"/>
+        <ontology:suspectInterrogatedIn rdf:resource="http://www.PoliceDepartment01.gr/ontology#Interrogation_04"/>
+        <ontology:hasAddress>Paramithoupolis Gwnia 41</ontology:hasAddress>
+        <ontology:hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">22</ontology:hasAge>
+        <ontology:hasGender>Male</ontology:hasGender>
+        <ontology:hasNationality>Moggolia</ontology:hasNationality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#Assault_Case_03 -->
+
+    <owl:NamedIndividual rdf:about="http://www.PoliceDepartment01.gr/ontology#Assault_Case_03">
+        <rdf:type rdf:resource="http://www.PoliceDepartment01.gr/ontology#Case"/>
+        <ontology:includesInterrogation rdf:resource="http://www.PoliceDepartment01.gr/ontology#Interrogation_03"/>
+        <ontology:involves rdf:resource="http://www.PoliceDepartment01.gr/ontology#Aris_Grigoriadis_Suspect"/>
+        <ontology:involves rdf:resource="http://www.PoliceDepartment01.gr/ontology#Eftychia_Suspect"/>
+        <ontology:involves rdf:resource="http://www.PoliceDepartment01.gr/ontology#Ivan_Savvidis_Victim"/>
+        <ontology:involves rdf:resource="http://www.PoliceDepartment01.gr/ontology#Panos_Adamidis_Victim"/>
+        <ontology:isHandledBy rdf:resource="http://www.PoliceDepartment01.gr/ontology#Xaralampopoulos_Security_Officer"/>
+        <ontology:hasID>DLD5490</ontology:hasID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#Bakayoko_Criminal -->
+
+    <owl:NamedIndividual rdf:about="http://www.PoliceDepartment01.gr/ontology#Bakayoko_Criminal">
+        <rdf:type rdf:resource="http://www.PoliceDepartment01.gr/ontology#Criminal"/>
+        <ontology:criminalInterrogatedIn rdf:resource="http://www.PoliceDepartment01.gr/ontology#Interrogation_04"/>
+        <ontology:isCriminalOf rdf:resource="http://www.PoliceDepartment01.gr/ontology#Traffic_Case_04"/>
+        <ontology:hasAddress>Mauris Leukas 88</ontology:hasAddress>
+        <ontology:hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">65</ontology:hasAge>
+        <ontology:hasGender>Male</ontology:hasGender>
+        <ontology:hasNationality>France</ontology:hasNationality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#Chris_Ilioudis_Security_Officer -->
+
+    <owl:NamedIndividual rdf:about="http://www.PoliceDepartment01.gr/ontology#Chris_Ilioudis_Security_Officer">
+        <rdf:type rdf:resource="http://www.PoliceDepartment01.gr/ontology#Security_Officer"/>
+        <ontology:arrestsCriminal rdf:resource="http://www.PoliceDepartment01.gr/ontology#Xatzopoulos_Criminal"/>
+        <ontology:arrestsSuspect rdf:resource="http://www.PoliceDepartment01.gr/ontology#Eftychia_Suspect"/>
+        <ontology:arrestsSuspect rdf:resource="http://www.PoliceDepartment01.gr/ontology#Tripkos_Gewrgios_Suspect"/>
+        <ontology:handlesCase rdf:resource="http://www.PoliceDepartment01.gr/ontology#Murder_Case_02"/>
+        <ontology:worksIn rdf:resource="http://www.PoliceDepartment01.gr/ontology#Department_Ksirokrini"/>
+        <ontology:worksIn rdf:resource="http://www.PoliceDepartment01.gr/ontology#Department_Tirana"/>
+        <ontology:hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">53</ontology:hasAge>
+        <ontology:hasBadgeNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">871</ontology:hasBadgeNumber>
+        <ontology:hasEmail>ilioudisTIOUMPAS@gmail.com</ontology:hasEmail>
+        <ontology:hasGender>Male</ontology:hasGender>
+        <ontology:hasSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">950</ontology:hasSalary>
+        <ontology:hasShift>Night</ontology:hasShift>
+        <ontology:hasYearsOfExperience rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</ontology:hasYearsOfExperience>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#Christos_Ronaldo_Patrol_Officer -->
+
+    <owl:NamedIndividual rdf:about="http://www.PoliceDepartment01.gr/ontology#Christos_Ronaldo_Patrol_Officer">
+        <rdf:type rdf:resource="http://www.PoliceDepartment01.gr/ontology#Patrol_Officer"/>
+        <ontology:handlesComplaint rdf:resource="http://www.PoliceDepartment01.gr/ontology#Complaint_01"/>
+        <ontology:worksIn rdf:resource="http://www.PoliceDepartment01.gr/ontology#Department_Asprovaltas"/>
+        <ontology:hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">40</ontology:hasAge>
+        <ontology:hasBadgeNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">961</ontology:hasBadgeNumber>
+        <ontology:hasEmail>ronaldoSIOU@gmail.com</ontology:hasEmail>
+        <ontology:hasGender>Male</ontology:hasGender>
+        <ontology:hasSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1280.0</ontology:hasSalary>
+        <ontology:hasShift>Morning</ontology:hasShift>
+        <ontology:hasYearsOfExperience rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</ontology:hasYearsOfExperience>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#Complaint_01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.PoliceDepartment01.gr/ontology#Complaint_01">
+        <rdf:type rdf:resource="http://www.PoliceDepartment01.gr/ontology#Complaint"/>
+        <ontology:ComplaintHandledBy rdf:resource="http://www.PoliceDepartment01.gr/ontology#Christos_Ronaldo_Patrol_Officer"/>
+        <ontology:ComplaintInvolves rdf:resource="http://www.PoliceDepartment01.gr/ontology#Xaris_Kane_Criminal"/>
+        <ontology:ComplaintMadeBy rdf:resource="http://www.PoliceDepartment01.gr/ontology#Panos_Adamidis_Victim"/>
+        <ontology:ComplaintHasID>CL813</ontology:ComplaintHasID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#Complaint_02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.PoliceDepartment01.gr/ontology#Complaint_02">
+        <rdf:type rdf:resource="http://www.PoliceDepartment01.gr/ontology#Complaint"/>
+        <ontology:ComplaintHandledBy rdf:resource="http://www.PoliceDepartment01.gr/ontology#Giannis_Xionis_Patrol_Officer"/>
+        <ontology:ComplaintInvolves rdf:resource="http://www.PoliceDepartment01.gr/ontology#Giannis_Xionis_Patrol_Officer"/>
+        <ontology:ComplaintInvolves rdf:resource="http://www.PoliceDepartment01.gr/ontology#Karypidis_Witness"/>
+        <ontology:ComplaintMadeBy rdf:resource="http://www.PoliceDepartment01.gr/ontology#Karypidis_Witness"/>
+        <ontology:ComplaintHasID>CL912</ontology:ComplaintHasID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#Complaint_03 -->
+
+    <owl:NamedIndividual rdf:about="http://www.PoliceDepartment01.gr/ontology#Complaint_03">
+        <rdf:type rdf:resource="http://www.PoliceDepartment01.gr/ontology#Complaint"/>
+        <ontology:ComplaintHandledBy rdf:resource="http://www.PoliceDepartment01.gr/ontology#Velestinlis_Patrol_Officer"/>
+        <ontology:ComplaintInvolves rdf:resource="http://www.PoliceDepartment01.gr/ontology#Ivan_Savvidis_Victim"/>
+        <ontology:ComplaintInvolves rdf:resource="http://www.PoliceDepartment01.gr/ontology#Panos_Adamidis_Victim"/>
+        <ontology:ComplaintMadeBy rdf:resource="http://www.PoliceDepartment01.gr/ontology#Ivan_Savvidis_Victim"/>
+        <ontology:ComplaintHasID>CL085</ontology:ComplaintHasID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#Complaint_04 -->
+
+    <owl:NamedIndividual rdf:about="http://www.PoliceDepartment01.gr/ontology#Complaint_04">
+        <rdf:type rdf:resource="http://www.PoliceDepartment01.gr/ontology#Complaint"/>
+        <ontology:ComplaintHandledBy rdf:resource="http://www.PoliceDepartment01.gr/ontology#Giannis_Xionis_Patrol_Officer"/>
+        <ontology:ComplaintInvolves rdf:resource="http://www.PoliceDepartment01.gr/ontology#Giannis_Xionis_Patrol_Officer"/>
+        <ontology:ComplaintInvolves rdf:resource="http://www.PoliceDepartment01.gr/ontology#Marinakis_Witness"/>
+        <ontology:ComplaintMadeBy rdf:resource="http://www.PoliceDepartment01.gr/ontology#Marinakis_Witness"/>
+        <ontology:ComplaintHasID>CL671</ontology:ComplaintHasID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#Department_Asprovaltas -->
+
+    <owl:NamedIndividual rdf:about="http://www.PoliceDepartment01.gr/ontology#Department_Asprovaltas">
+        <rdf:type rdf:resource="http://www.PoliceDepartment01.gr/ontology#Department"/>
+        <ontology:HasOfficer rdf:resource="http://www.PoliceDepartment01.gr/ontology#Christos_Ronaldo_Patrol_Officer"/>
+        <ontology:HasOfficer rdf:resource="http://www.PoliceDepartment01.gr/ontology#Fotis_Koukourakis_Interrogation_Officer"/>
+        <ontology:HasOfficer rdf:resource="http://www.PoliceDepartment01.gr/ontology#Xaralampidis_Security_Officer"/>
+        <ontology:ReceivesComplaint rdf:resource="http://www.PoliceDepartment01.gr/ontology#Complaint_01"/>
+        <ontology:hasDepartmentAddress>Boubouriwn 10</ontology:hasDepartmentAddress>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#Department_Kordelio -->
+
+    <owl:NamedIndividual rdf:about="http://www.PoliceDepartment01.gr/ontology#Department_Kordelio">
+        <rdf:type rdf:resource="http://www.PoliceDepartment01.gr/ontology#Department"/>
+        <ontology:HasOfficer rdf:resource="http://www.PoliceDepartment01.gr/ontology#Katerina_Koukouraki_Interrogation_Officer"/>
+        <ontology:HasOfficer rdf:resource="http://www.PoliceDepartment01.gr/ontology#Papadopoulos_Interrogation_Officer"/>
+        <ontology:HasOfficer rdf:resource="http://www.PoliceDepartment01.gr/ontology#Xaralampopoulos_Security_Officer"/>
+        <ontology:ReceivesComplaint rdf:resource="http://www.PoliceDepartment01.gr/ontology#Department_Kordelio"/>
+        <ontology:hasDepartmentAddress>Evelpidwn 77</ontology:hasDepartmentAddress>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#Department_Ksirokrini -->
+
+    <owl:NamedIndividual rdf:about="http://www.PoliceDepartment01.gr/ontology#Department_Ksirokrini">
+        <rdf:type rdf:resource="http://www.PoliceDepartment01.gr/ontology#Department"/>
+        <ontology:HasOfficer rdf:resource="http://www.PoliceDepartment01.gr/ontology#Chris_Ilioudis_Security_Officer"/>
+        <ontology:HasOfficer rdf:resource="http://www.PoliceDepartment01.gr/ontology#Fillipos_Traffic_Officer"/>
+        <ontology:HasOfficer rdf:resource="http://www.PoliceDepartment01.gr/ontology#Papadopoulos_Interrogation_Officer"/>
+        <ontology:ReceivesComplaint rdf:resource="http://www.PoliceDepartment01.gr/ontology#Complaint_04"/>
+        <ontology:hasDepartmentAddress>Platamona 44</ontology:hasDepartmentAddress>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#Department_Tirana -->
+
+    <owl:NamedIndividual rdf:about="http://www.PoliceDepartment01.gr/ontology#Department_Tirana">
+        <rdf:type rdf:resource="http://www.PoliceDepartment01.gr/ontology#Department"/>
+        <ontology:HasOfficer rdf:resource="http://www.PoliceDepartment01.gr/ontology#Chris_Ilioudis_Security_Officer"/>
+        <ontology:HasOfficer rdf:resource="http://www.PoliceDepartment01.gr/ontology#Fillipos_Traffic_Officer"/>
+        <ontology:HasOfficer rdf:resource="http://www.PoliceDepartment01.gr/ontology#Giannis_Xionis_Patrol_Officer"/>
+        <ontology:HasOfficer rdf:resource="http://www.PoliceDepartment01.gr/ontology#Katerina_Koukouraki_Interrogation_Officer"/>
+        <ontology:ReceivesComplaint rdf:resource="http://www.PoliceDepartment01.gr/ontology#Complaint_02"/>
+        <ontology:hasDepartmentAddress>Iokastis 9</ontology:hasDepartmentAddress>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#Despoina_Suspect -->
+
+    <owl:NamedIndividual rdf:about="http://www.PoliceDepartment01.gr/ontology#Despoina_Suspect">
+        <rdf:type rdf:resource="http://www.PoliceDepartment01.gr/ontology#Suspect"/>
+        <ontology:isSuspectOf rdf:resource="http://www.PoliceDepartment01.gr/ontology#Robery_Case_01"/>
+        <ontology:suspectInterrogatedIn rdf:resource="http://www.PoliceDepartment01.gr/ontology#Interrogation_01"/>
+        <ontology:hasAddress>Ethnikis Amynis 56</ontology:hasAddress>
+        <ontology:hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">19</ontology:hasAge>
+        <ontology:hasGender>Female</ontology:hasGender>
+        <ontology:hasNationality>Albania</ontology:hasNationality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#Eftychia_Suspect -->
+
+    <owl:NamedIndividual rdf:about="http://www.PoliceDepartment01.gr/ontology#Eftychia_Suspect">
+        <rdf:type rdf:resource="http://www.PoliceDepartment01.gr/ontology#Suspect"/>
+        <ontology:isSuspectOf rdf:resource="http://www.PoliceDepartment01.gr/ontology#Assault_Case_03"/>
+        <ontology:isSuspectOf rdf:resource="http://www.PoliceDepartment01.gr/ontology#Murder_Case_02"/>
+        <ontology:isSuspectOf rdf:resource="http://www.PoliceDepartment01.gr/ontology#Robery_Case_01"/>
+        <ontology:suspectInterrogatedIn rdf:resource="http://www.PoliceDepartment01.gr/ontology#Interrogation_01"/>
+        <ontology:suspectInterrogatedIn rdf:resource="http://www.PoliceDepartment01.gr/ontology#Interrogation_02"/>
+        <ontology:suspectInterrogatedIn rdf:resource="http://www.PoliceDepartment01.gr/ontology#Interrogation_03"/>
+        <ontology:hasAddress>Ionos Dragoumi 2</ontology:hasAddress>
+        <ontology:hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">30</ontology:hasAge>
+        <ontology:hasGender>Female</ontology:hasGender>
+        <ontology:hasNationality>Pakistan</ontology:hasNationality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#Fillipos_Traffic_Officer -->
+
+    <owl:NamedIndividual rdf:about="http://www.PoliceDepartment01.gr/ontology#Fillipos_Traffic_Officer">
+        <rdf:type rdf:resource="http://www.PoliceDepartment01.gr/ontology#Traffic_Officer"/>
+        <ontology:arrestsCriminal rdf:resource="http://www.PoliceDepartment01.gr/ontology#Bakayoko_Criminal"/>
+        <ontology:arrestsSuspect rdf:resource="http://www.PoliceDepartment01.gr/ontology#Alafouzos_Suspect"/>
+        <ontology:arrestsSuspect rdf:resource="http://www.PoliceDepartment01.gr/ontology#Aris_Grigoriadis_Suspect"/>
+        <ontology:arrestsSuspect rdf:resource="http://www.PoliceDepartment01.gr/ontology#Tripkos_Gewrgios_Suspect"/>
+        <ontology:handlesCase rdf:resource="http://www.PoliceDepartment01.gr/ontology#Traffic_Case_04"/>
+        <ontology:worksIn rdf:resource="http://www.PoliceDepartment01.gr/ontology#Department_Ksirokrini"/>
+        <ontology:worksIn rdf:resource="http://www.PoliceDepartment01.gr/ontology#Department_Tirana"/>
+        <ontology:hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">31</ontology:hasAge>
+        <ontology:hasBadgeNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">065</ontology:hasBadgeNumber>
+        <ontology:hasEmail>filliposOPREAZS@gmail.com</ontology:hasEmail>
+        <ontology:hasGender>Male</ontology:hasGender>
+        <ontology:hasSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">845</ontology:hasSalary>
+        <ontology:hasShift>Morning</ontology:hasShift>
+        <ontology:hasYearsOfExperience rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9</ontology:hasYearsOfExperience>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#Fotis_Koukourakis_Interrogation_Officer -->
+
+    <owl:NamedIndividual rdf:about="http://www.PoliceDepartment01.gr/ontology#Fotis_Koukourakis_Interrogation_Officer">
+        <rdf:type rdf:resource="http://www.PoliceDepartment01.gr/ontology#Interrogation_Officer"/>
+        <ontology:handlesInterrogation rdf:resource="http://www.PoliceDepartment01.gr/ontology#Interrogation_01"/>
+        <ontology:worksIn rdf:resource="http://www.PoliceDepartment01.gr/ontology#Department_Asprovaltas"/>
+        <ontology:hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">28</ontology:hasAge>
+        <ontology:hasBadgeNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">666</ontology:hasBadgeNumber>
+        <ontology:hasEmail>FotisKoukourakovits@gmail.com</ontology:hasEmail>
+        <ontology:hasGender>Male</ontology:hasGender>
+        <ontology:hasSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">945</ontology:hasSalary>
+        <ontology:hasShift>Evening</ontology:hasShift>
+        <ontology:hasYearsOfExperience rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</ontology:hasYearsOfExperience>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#Giannis_Xionis_Patrol_Officer -->
+
+    <owl:NamedIndividual rdf:about="http://www.PoliceDepartment01.gr/ontology#Giannis_Xionis_Patrol_Officer">
+        <rdf:type rdf:resource="http://www.PoliceDepartment01.gr/ontology#Patrol_Officer"/>
+        <ontology:handlesComplaint rdf:resource="http://www.PoliceDepartment01.gr/ontology#Complaint_02"/>
+        <ontology:handlesComplaint rdf:resource="http://www.PoliceDepartment01.gr/ontology#Complaint_04"/>
+        <ontology:worksIn rdf:resource="http://www.PoliceDepartment01.gr/ontology#Department_Tirana"/>
+        <ontology:hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">31</ontology:hasAge>
+        <ontology:hasBadgeNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1312</ontology:hasBadgeNumber>
+        <ontology:hasEmail>XionizeiAspri@gmail.com</ontology:hasEmail>
+        <ontology:hasGender>Male</ontology:hasGender>
+        <ontology:hasSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">860</ontology:hasSalary>
+        <ontology:hasShift>Night</ontology:hasShift>
+        <ontology:hasYearsOfExperience rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6</ontology:hasYearsOfExperience>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#Interrogation_01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.PoliceDepartment01.gr/ontology#Interrogation_01">
+        <rdf:type rdf:resource="http://www.PoliceDepartment01.gr/ontology#Interrogation"/>
+        <ontology:InterrogationHandledBy rdf:resource="http://www.PoliceDepartment01.gr/ontology#Fotis_Koukourakis_Interrogation_Officer"/>
+        <ontology:InterrogationHeldIn rdf:resource="http://www.PoliceDepartment01.gr/ontology#Department_Asprovaltas"/>
+        <ontology:InterrogationIncludes rdf:resource="http://www.PoliceDepartment01.gr/ontology#Despoina_Suspect"/>
+        <ontology:InterrogationIncludes rdf:resource="http://www.PoliceDepartment01.gr/ontology#Eftychia_Suspect"/>
+        <ontology:InterrogationIncludes rdf:resource="http://www.PoliceDepartment01.gr/ontology#KingMots_Witness"/>
+        <ontology:InterrogationIncludes rdf:resource="http://www.PoliceDepartment01.gr/ontology#Panos_Adamidis_Victim"/>
+        <ontology:InterrogationIncludes rdf:resource="http://www.PoliceDepartment01.gr/ontology#Tripkos_Gewrgios_Suspect"/>
+        <ontology:InterrogationIncludes rdf:resource="http://www.PoliceDepartment01.gr/ontology#VitsasTheMartyr_Witness"/>
+        <ontology:InterrogationHasID>KOG851</ontology:InterrogationHasID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#Interrogation_02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.PoliceDepartment01.gr/ontology#Interrogation_02">
+        <rdf:type rdf:resource="http://www.PoliceDepartment01.gr/ontology#Interrogation"/>
+        <ontology:InterrogationHandledBy rdf:resource="http://www.PoliceDepartment01.gr/ontology#Katerina_Koukouraki_Interrogation_Officer"/>
+        <ontology:InterrogationHeldIn rdf:resource="http://www.PoliceDepartment01.gr/ontology#Department_Tirana"/>
+        <ontology:InterrogationIncludes rdf:resource="http://www.PoliceDepartment01.gr/ontology#Eftychia_Suspect"/>
+        <ontology:InterrogationIncludes rdf:resource="http://www.PoliceDepartment01.gr/ontology#Karypidis_Witness"/>
+        <ontology:InterrogationIncludes rdf:resource="http://www.PoliceDepartment01.gr/ontology#Rigas_Kotsakis_Victim"/>
+        <ontology:InterrogationIncludes rdf:resource="http://www.PoliceDepartment01.gr/ontology#Teosty_Dead_Victim"/>
+        <ontology:InterrogationIncludes rdf:resource="http://www.PoliceDepartment01.gr/ontology#Tripkos_Gewrgios_Suspect"/>
+        <ontology:InterrogationIncludes rdf:resource="http://www.PoliceDepartment01.gr/ontology#VitsasTheMartyr_Witness"/>
+        <ontology:InterrogationHasID>KOG591</ontology:InterrogationHasID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#Interrogation_03 -->
+
+    <owl:NamedIndividual rdf:about="http://www.PoliceDepartment01.gr/ontology#Interrogation_03">
+        <rdf:type rdf:resource="http://www.PoliceDepartment01.gr/ontology#Interrogation"/>
+        <ontology:InterrogationHandledBy rdf:resource="http://www.PoliceDepartment01.gr/ontology#Katerina_Koukouraki_Interrogation_Officer"/>
+        <ontology:InterrogationHeldIn rdf:resource="http://www.PoliceDepartment01.gr/ontology#Department_Kordelio"/>
+        <ontology:InterrogationIncludes rdf:resource="http://www.PoliceDepartment01.gr/ontology#Aris_Grigoriadis_Suspect"/>
+        <ontology:InterrogationIncludes rdf:resource="http://www.PoliceDepartment01.gr/ontology#Eftychia_Suspect"/>
+        <ontology:InterrogationIncludes rdf:resource="http://www.PoliceDepartment01.gr/ontology#Panos_Adamidis_Victim"/>
+        <ontology:InterrogationHasID>KOG909</ontology:InterrogationHasID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#Interrogation_04 -->
+
+    <owl:NamedIndividual rdf:about="http://www.PoliceDepartment01.gr/ontology#Interrogation_04">
+        <rdf:type rdf:resource="http://www.PoliceDepartment01.gr/ontology#Interrogation"/>
+        <ontology:InterrogationHandledBy rdf:resource="http://www.PoliceDepartment01.gr/ontology#ThodwrisLigdas_Interrogation_Officer"/>
+        <ontology:InterrogationHeldIn rdf:resource="http://www.PoliceDepartment01.gr/ontology#Department_Ksirokrini"/>
+        <ontology:InterrogationIncludes rdf:resource="http://www.PoliceDepartment01.gr/ontology#Alafouzos_Suspect"/>
+        <ontology:InterrogationIncludes rdf:resource="http://www.PoliceDepartment01.gr/ontology#Aris_Grigoriadis_Suspect"/>
+        <ontology:InterrogationIncludes rdf:resource="http://www.PoliceDepartment01.gr/ontology#Bakayoko_Criminal"/>
+        <ontology:InterrogationIncludes rdf:resource="http://www.PoliceDepartment01.gr/ontology#Marinakis_Witness"/>
+        <ontology:InterrogationIncludes rdf:resource="http://www.PoliceDepartment01.gr/ontology#Tripkos_Gewrgios_Suspect"/>
+        <ontology:InterrogationHasID>KOG818</ontology:InterrogationHasID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#Ivan_Savvidis_Victim -->
+
+    <owl:NamedIndividual rdf:about="http://www.PoliceDepartment01.gr/ontology#Ivan_Savvidis_Victim">
+        <rdf:type rdf:resource="http://www.PoliceDepartment01.gr/ontology#Victim"/>
+        <ontology:isVictimOf rdf:resource="http://www.PoliceDepartment01.gr/ontology#Assault_Case_03"/>
+        <ontology:hasAddress>Mosxas 98</ontology:hasAddress>
+        <ontology:hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">67</ontology:hasAge>
+        <ontology:hasGender>Male</ontology:hasGender>
+        <ontology:hasNationality>Russia</ontology:hasNationality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#Karypidis_Witness -->
+
+    <owl:NamedIndividual rdf:about="http://www.PoliceDepartment01.gr/ontology#Karypidis_Witness">
+        <rdf:type rdf:resource="http://www.PoliceDepartment01.gr/ontology#Witness"/>
+        <ontology:isWitnessOf rdf:resource="http://www.PoliceDepartment01.gr/ontology#Murder_Case_02"/>
+        <ontology:witnessInterrogatedIn rdf:resource="http://www.PoliceDepartment01.gr/ontology#Interrogation_02"/>
+        <ontology:hasAddress>Kolokotroni 43</ontology:hasAddress>
+        <ontology:hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">90</ontology:hasAge>
+        <ontology:hasGender>Male</ontology:hasGender>
+        <ontology:hasNationality>Maroco</ontology:hasNationality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#Katerina_Koukouraki_Interrogation_Officer -->
+
+    <owl:NamedIndividual rdf:about="http://www.PoliceDepartment01.gr/ontology#Katerina_Koukouraki_Interrogation_Officer">
+        <rdf:type rdf:resource="http://www.PoliceDepartment01.gr/ontology#Interrogation_Officer"/>
+        <ontology:handlesInterrogation rdf:resource="http://www.PoliceDepartment01.gr/ontology#Interrogation_02"/>
+        <ontology:handlesInterrogation rdf:resource="http://www.PoliceDepartment01.gr/ontology#Interrogation_03"/>
+        <ontology:worksIn rdf:resource="http://www.PoliceDepartment01.gr/ontology#Department_Kordelio"/>
+        <ontology:worksIn rdf:resource="http://www.PoliceDepartment01.gr/ontology#Department_Tirana"/>
+        <ontology:hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">35</ontology:hasAge>
+        <ontology:hasBadgeNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">123</ontology:hasBadgeNumber>
+        <ontology:hasEmail>gynaika_foti@gmail.com</ontology:hasEmail>
+        <ontology:hasGender>Female</ontology:hasGender>
+        <ontology:hasSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1110</ontology:hasSalary>
+        <ontology:hasShift>Morning</ontology:hasShift>
+        <ontology:hasYearsOfExperience rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</ontology:hasYearsOfExperience>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#KingMots_Witness -->
+
+    <owl:NamedIndividual rdf:about="http://www.PoliceDepartment01.gr/ontology#KingMots_Witness">
+        <rdf:type rdf:resource="http://www.PoliceDepartment01.gr/ontology#Witness"/>
+        <ontology:isWitnessOf rdf:resource="http://www.PoliceDepartment01.gr/ontology#Robery_Case_01"/>
+        <ontology:witnessInterrogatedIn rdf:resource="http://www.PoliceDepartment01.gr/ontology#Interrogation_01"/>
+        <ontology:hasAddress>Prezoupoli 19</ontology:hasAddress>
+        <ontology:hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">22</ontology:hasAge>
+        <ontology:hasGender>Male</ontology:hasGender>
+        <ontology:hasNationality>Kongo</ontology:hasNationality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#Marinakis_Witness -->
+
+    <owl:NamedIndividual rdf:about="http://www.PoliceDepartment01.gr/ontology#Marinakis_Witness">
+        <rdf:type rdf:resource="http://www.PoliceDepartment01.gr/ontology#Witness"/>
+        <ontology:isWitnessOf rdf:resource="http://www.PoliceDepartment01.gr/ontology#Traffic_Case_04"/>
+        <ontology:witnessInterrogatedIn rdf:resource="http://www.PoliceDepartment01.gr/ontology#Interrogation_04"/>
+        <ontology:hasAddress>Limanaki 65</ontology:hasAddress>
+        <ontology:hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">55</ontology:hasAge>
+        <ontology:hasGender>Male</ontology:hasGender>
+        <ontology:hasNationality>Columbia</ontology:hasNationality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#Murder_Case_02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.PoliceDepartment01.gr/ontology#Murder_Case_02">
+        <rdf:type rdf:resource="http://www.PoliceDepartment01.gr/ontology#Case"/>
+        <ontology:includesInterrogation rdf:resource="http://www.PoliceDepartment01.gr/ontology#Interrogation_02"/>
+        <ontology:involves rdf:resource="http://www.PoliceDepartment01.gr/ontology#Eftychia_Suspect"/>
+        <ontology:involves rdf:resource="http://www.PoliceDepartment01.gr/ontology#Karypidis_Witness"/>
+        <ontology:involves rdf:resource="http://www.PoliceDepartment01.gr/ontology#Rigas_Kotsakis_Victim"/>
+        <ontology:involves rdf:resource="http://www.PoliceDepartment01.gr/ontology#Teosty_Dead_Victim"/>
+        <ontology:involves rdf:resource="http://www.PoliceDepartment01.gr/ontology#Tripkos_Gewrgios_Suspect"/>
+        <ontology:involves rdf:resource="http://www.PoliceDepartment01.gr/ontology#VitsasTheMartyr_Witness"/>
+        <ontology:isHandledBy rdf:resource="http://www.PoliceDepartment01.gr/ontology#Chris_Ilioudis_Security_Officer"/>
+        <ontology:hasID>DLD733</ontology:hasID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#Panos_Adamidis_Victim -->
+
+    <owl:NamedIndividual rdf:about="http://www.PoliceDepartment01.gr/ontology#Panos_Adamidis_Victim">
+        <rdf:type rdf:resource="http://www.PoliceDepartment01.gr/ontology#Alive_Victim"/>
+        <ontology:aliveVictimInterrogatedIn rdf:resource="http://www.PoliceDepartment01.gr/ontology#Interrogation_01"/>
+        <ontology:aliveVictimInterrogatedIn rdf:resource="http://www.PoliceDepartment01.gr/ontology#Interrogation_03"/>
+        <ontology:isVictimOf rdf:resource="http://www.PoliceDepartment01.gr/ontology#Assault_Case_03"/>
+        <ontology:isVictimOf rdf:resource="http://www.PoliceDepartment01.gr/ontology#Robery_Case_01"/>
+        <ontology:hasAddress>Antikeimenostrefias 10</ontology:hasAddress>
+        <ontology:hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">53</ontology:hasAge>
+        <ontology:hasGender>NonBinary</ontology:hasGender>
+        <ontology:hasNationality>Japan</ontology:hasNationality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#Papadopoulos_Interrogation_Officer -->
+
+    <owl:NamedIndividual rdf:about="http://www.PoliceDepartment01.gr/ontology#Papadopoulos_Interrogation_Officer">
+        <rdf:type rdf:resource="http://www.PoliceDepartment01.gr/ontology#Interrogation_Officer"/>
+        <ontology:worksIn rdf:resource="http://www.PoliceDepartment01.gr/ontology#Department_Kordelio"/>
+        <ontology:worksIn rdf:resource="http://www.PoliceDepartment01.gr/ontology#Department_Ksirokrini"/>
+        <ontology:hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">44</ontology:hasAge>
+        <ontology:hasBadgeNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">890</ontology:hasBadgeNumber>
+        <ontology:hasEmail>papadopoulosmikroulis@gmail.com</ontology:hasEmail>
+        <ontology:hasGender>Male</ontology:hasGender>
+        <ontology:hasSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">865</ontology:hasSalary>
+        <ontology:hasShift>Night</ontology:hasShift>
+        <ontology:hasYearsOfExperience rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</ontology:hasYearsOfExperience>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#Rigas_Kotsakis_Victim -->
+
+    <owl:NamedIndividual rdf:about="http://www.PoliceDepartment01.gr/ontology#Rigas_Kotsakis_Victim">
+        <rdf:type rdf:resource="http://www.PoliceDepartment01.gr/ontology#Victim"/>
+        <ontology:aliveVictimInterrogatedIn rdf:resource="http://www.PoliceDepartment01.gr/ontology#Interrogation_02"/>
+        <ontology:isVictimOf rdf:resource="http://www.PoliceDepartment01.gr/ontology#Murder_Case_02"/>
+        <ontology:hasAddress>Koxyloupoli 1</ontology:hasAddress>
+        <ontology:hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">29</ontology:hasAge>
+        <ontology:hasGender>Male</ontology:hasGender>
+        <ontology:hasNationality>Greece</ontology:hasNationality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#Robery_Case_01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.PoliceDepartment01.gr/ontology#Robery_Case_01">
+        <rdf:type rdf:resource="http://www.PoliceDepartment01.gr/ontology#Case"/>
+        <ontology:includesInterrogation rdf:resource="http://www.PoliceDepartment01.gr/ontology#Interrogation_01"/>
+        <ontology:involves rdf:resource="http://www.PoliceDepartment01.gr/ontology#Despoina_Suspect"/>
+        <ontology:involves rdf:resource="http://www.PoliceDepartment01.gr/ontology#Eftychia_Suspect"/>
+        <ontology:involves rdf:resource="http://www.PoliceDepartment01.gr/ontology#KingMots_Witness"/>
+        <ontology:involves rdf:resource="http://www.PoliceDepartment01.gr/ontology#Panos_Adamidis_Victim"/>
+        <ontology:involves rdf:resource="http://www.PoliceDepartment01.gr/ontology#Tripkos_Gewrgios_Suspect"/>
+        <ontology:involves rdf:resource="http://www.PoliceDepartment01.gr/ontology#VitsasTheMartyr_Witness"/>
+        <ontology:involves rdf:resource="http://www.PoliceDepartment01.gr/ontology#Xaris_Kane_Criminal"/>
+        <ontology:isHandledBy rdf:resource="http://www.PoliceDepartment01.gr/ontology#Xaralampidis_Security_Officer"/>
+        <ontology:hasID>DLD555</ontology:hasID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#Teosty_Dead_Victim -->
+
+    <owl:NamedIndividual rdf:about="http://www.PoliceDepartment01.gr/ontology#Teosty_Dead_Victim">
+        <rdf:type rdf:resource="http://www.PoliceDepartment01.gr/ontology#Dead_Victim"/>
+        <ontology:isDeadVictimOf rdf:resource="http://www.PoliceDepartment01.gr/ontology#Murder_Case_02"/>
+        <ontology:hasAddress>Ligdoupoli 3</ontology:hasAddress>
+        <ontology:hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">43</ontology:hasAge>
+        <ontology:hasGender>Male</ontology:hasGender>
+        <ontology:hasNationality>LigdoXwra</ontology:hasNationality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#ThodwrisLigdas_Interrogation_Officer -->
+
+    <owl:NamedIndividual rdf:about="http://www.PoliceDepartment01.gr/ontology#ThodwrisLigdas_Interrogation_Officer">
+        <rdf:type rdf:resource="http://www.PoliceDepartment01.gr/ontology#Interrogation_Officer"/>
+        <ontology:handlesInterrogation rdf:resource="http://www.PoliceDepartment01.gr/ontology#Interrogation_04"/>
+        <ontology:hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">28</ontology:hasAge>
+        <ontology:hasBadgeNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">087</ontology:hasBadgeNumber>
+        <ontology:hasEmail>ThodwrisAgorinas@gmail.com</ontology:hasEmail>
+        <ontology:hasGender>Male</ontology:hasGender>
+        <ontology:hasSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1190</ontology:hasSalary>
+        <ontology:hasShift>Evening</ontology:hasShift>
+        <ontology:hasYearsOfExperience rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8</ontology:hasYearsOfExperience>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#Traffic_Case_04 -->
+
+    <owl:NamedIndividual rdf:about="http://www.PoliceDepartment01.gr/ontology#Traffic_Case_04">
+        <rdf:type rdf:resource="http://www.PoliceDepartment01.gr/ontology#Case"/>
+        <ontology:includesInterrogation rdf:resource="http://www.PoliceDepartment01.gr/ontology#Interrogation_04"/>
+        <ontology:involves rdf:resource="http://www.PoliceDepartment01.gr/ontology#Alafouzos_Suspect"/>
+        <ontology:involves rdf:resource="http://www.PoliceDepartment01.gr/ontology#Aris_Grigoriadis_Suspect"/>
+        <ontology:involves rdf:resource="http://www.PoliceDepartment01.gr/ontology#Bakayoko_Criminal"/>
+        <ontology:involves rdf:resource="http://www.PoliceDepartment01.gr/ontology#Marinakis_Witness"/>
+        <ontology:involves rdf:resource="http://www.PoliceDepartment01.gr/ontology#Tripkos_Gewrgios_Suspect"/>
+        <ontology:isHandledBy rdf:resource="http://www.PoliceDepartment01.gr/ontology#Fillipos_Traffic_Officer"/>
+        <ontology:hasID>DLD634</ontology:hasID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#Tripkos_Gewrgios_Suspect -->
+
+    <owl:NamedIndividual rdf:about="http://www.PoliceDepartment01.gr/ontology#Tripkos_Gewrgios_Suspect">
+        <rdf:type rdf:resource="http://www.PoliceDepartment01.gr/ontology#Suspect"/>
+        <ontology:isSuspectOf rdf:resource="http://www.PoliceDepartment01.gr/ontology#Murder_Case_02"/>
+        <ontology:isSuspectOf rdf:resource="http://www.PoliceDepartment01.gr/ontology#Robery_Case_01"/>
+        <ontology:isSuspectOf rdf:resource="http://www.PoliceDepartment01.gr/ontology#Traffic_Case_04"/>
+        <ontology:suspectInterrogatedIn rdf:resource="http://www.PoliceDepartment01.gr/ontology#Interrogation_01"/>
+        <ontology:suspectInterrogatedIn rdf:resource="http://www.PoliceDepartment01.gr/ontology#Interrogation_02"/>
+        <ontology:suspectInterrogatedIn rdf:resource="http://www.PoliceDepartment01.gr/ontology#Interrogation_04"/>
+        <ontology:hasAddress>PseutoXwras 90</ontology:hasAddress>
+        <ontology:hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">23</ontology:hasAge>
+        <ontology:hasGender>NonBinary</ontology:hasGender>
+        <ontology:hasNationality>Albania</ontology:hasNationality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#Velestinlis_Patrol_Officer -->
+
+    <owl:NamedIndividual rdf:about="http://www.PoliceDepartment01.gr/ontology#Velestinlis_Patrol_Officer">
+        <rdf:type rdf:resource="http://www.PoliceDepartment01.gr/ontology#Patrol_Officer"/>
+        <ontology:handlesComplaint rdf:resource="http://www.PoliceDepartment01.gr/ontology#Complaint_03"/>
+        <ontology:hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">45</ontology:hasAge>
+        <ontology:hasBadgeNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">432</ontology:hasBadgeNumber>
+        <ontology:hasEmail>RigasVelestinlis@gmail.com</ontology:hasEmail>
+        <ontology:hasGender>Male</ontology:hasGender>
+        <ontology:hasSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">780</ontology:hasSalary>
+        <ontology:hasShift>Morning</ontology:hasShift>
+        <ontology:hasYearsOfExperience rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</ontology:hasYearsOfExperience>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#Vincent_Kompany_Criminal -->
+
+    <owl:NamedIndividual rdf:about="http://www.PoliceDepartment01.gr/ontology#Vincent_Kompany_Criminal">
+        <rdf:type rdf:resource="http://www.PoliceDepartment01.gr/ontology#Criminal"/>
+        <ontology:hasAddress>Tioumpas Gwnia 88</ontology:hasAddress>
+        <ontology:hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">41</ontology:hasAge>
+        <ontology:hasGender>Male</ontology:hasGender>
+        <ontology:hasNationality>France</ontology:hasNationality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#VitsasTheMartyr_Witness -->
+
+    <owl:NamedIndividual rdf:about="http://www.PoliceDepartment01.gr/ontology#VitsasTheMartyr_Witness">
+        <rdf:type rdf:resource="http://www.PoliceDepartment01.gr/ontology#Witness"/>
+        <ontology:isWitnessOf rdf:resource="http://www.PoliceDepartment01.gr/ontology#Murder_Case_02"/>
+        <ontology:isWitnessOf rdf:resource="http://www.PoliceDepartment01.gr/ontology#Robery_Case_01"/>
+        <ontology:witnessInterrogatedIn rdf:resource="http://www.PoliceDepartment01.gr/ontology#Interrogation_01"/>
+        <ontology:witnessInterrogatedIn rdf:resource="http://www.PoliceDepartment01.gr/ontology#Interrogation_02"/>
+        <ontology:hasAddress>Kwbometesseramisi 98</ontology:hasAddress>
+        <ontology:hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">65</ontology:hasAge>
+        <ontology:hasGender>Male</ontology:hasGender>
+        <ontology:hasNationality>Bulgaria</ontology:hasNationality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#Xaralampidis_Security_Officer -->
+
+    <owl:NamedIndividual rdf:about="http://www.PoliceDepartment01.gr/ontology#Xaralampidis_Security_Officer">
+        <rdf:type rdf:resource="http://www.PoliceDepartment01.gr/ontology#Security_Officer"/>
+        <ontology:arrestsCriminal rdf:resource="http://www.PoliceDepartment01.gr/ontology#Xaris_Kane_Criminal"/>
+        <ontology:arrestsSuspect rdf:resource="http://www.PoliceDepartment01.gr/ontology#Despoina_Suspect"/>
+        <ontology:arrestsSuspect rdf:resource="http://www.PoliceDepartment01.gr/ontology#Eftychia_Suspect"/>
+        <ontology:arrestsSuspect rdf:resource="http://www.PoliceDepartment01.gr/ontology#Tripkos_Gewrgios_Suspect"/>
+        <ontology:handlesCase rdf:resource="http://www.PoliceDepartment01.gr/ontology#Robery_Case_01"/>
+        <ontology:worksIn rdf:resource="http://www.PoliceDepartment01.gr/ontology#Department_Asprovaltas"/>
+        <ontology:hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">34</ontology:hasAge>
+        <ontology:hasBadgeNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">569</ontology:hasBadgeNumber>
+        <ontology:hasEmail>NeoStreamNeesPeripeteies@gmail.com</ontology:hasEmail>
+        <ontology:hasGender>Male</ontology:hasGender>
+        <ontology:hasSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1500</ontology:hasSalary>
+        <ontology:hasShift>Night</ontology:hasShift>
+        <ontology:hasYearsOfExperience rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">11</ontology:hasYearsOfExperience>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#Xaralampopoulos_Security_Officer -->
+
+    <owl:NamedIndividual rdf:about="http://www.PoliceDepartment01.gr/ontology#Xaralampopoulos_Security_Officer">
+        <rdf:type rdf:resource="http://www.PoliceDepartment01.gr/ontology#Security_Officer"/>
+        <ontology:arrestsCriminal rdf:resource="http://www.PoliceDepartment01.gr/ontology#Vincent_Kompany_Criminal"/>
+        <ontology:arrestsSuspect rdf:resource="http://www.PoliceDepartment01.gr/ontology#Aris_Grigoriadis_Suspect"/>
+        <ontology:arrestsSuspect rdf:resource="http://www.PoliceDepartment01.gr/ontology#Eftychia_Suspect"/>
+        <ontology:handlesCase rdf:resource="http://www.PoliceDepartment01.gr/ontology#Assault_Case_03"/>
+        <ontology:worksIn rdf:resource="http://www.PoliceDepartment01.gr/ontology#Department_Kordelio"/>
+        <ontology:hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">65</ontology:hasAge>
+        <ontology:hasBadgeNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">436</ontology:hasBadgeNumber>
+        <ontology:hasEmail>LampropoulosXARALAMPOPOULOS@gmail.com</ontology:hasEmail>
+        <ontology:hasGender>Male</ontology:hasGender>
+        <ontology:hasSalary rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1000</ontology:hasSalary>
+        <ontology:hasShift>Night</ontology:hasShift>
+        <ontology:hasYearsOfExperience rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">17</ontology:hasYearsOfExperience>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#Xaris_Kane_Criminal -->
+
+    <owl:NamedIndividual rdf:about="http://www.PoliceDepartment01.gr/ontology#Xaris_Kane_Criminal">
+        <rdf:type rdf:resource="http://www.PoliceDepartment01.gr/ontology#Criminal"/>
+        <ontology:criminalInterrogatedIn rdf:resource="http://www.PoliceDepartment01.gr/ontology#Interrogation_01"/>
+        <ontology:isCriminalOf rdf:resource="http://www.PoliceDepartment01.gr/ontology#Robery_Case_01"/>
+        <ontology:hasAddress>Monaxo 12</ontology:hasAddress>
+        <ontology:hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">49</ontology:hasAge>
+        <ontology:hasGender>Male</ontology:hasGender>
+        <ontology:hasNationality>Germany</ontology:hasNationality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.PoliceDepartment01.gr/ontology#Xatzopoulos_Criminal -->
+
+    <owl:NamedIndividual rdf:about="http://www.PoliceDepartment01.gr/ontology#Xatzopoulos_Criminal">
+        <rdf:type rdf:resource="http://www.PoliceDepartment01.gr/ontology#Criminal"/>
+        <ontology:criminalInterrogatedIn rdf:resource="http://www.PoliceDepartment01.gr/ontology#Interrogation_02"/>
+        <ontology:isCriminalOf rdf:resource="http://www.PoliceDepartment01.gr/ontology#Murder_Case_02"/>
+        <ontology:hasAddress>Antistasews 19</ontology:hasAddress>
+        <ontology:hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">50</ontology:hasAge>
+        <ontology:hasGender>Male</ontology:hasGender>
+        <ontology:hasNationality>France</ontology:hasNationality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.PoliceDepartment01.gr/ontology#Assault"/>
+            <rdf:Description rdf:about="http://www.PoliceDepartment01.gr/ontology#Murder"/>
+            <rdf:Description rdf:about="http://www.PoliceDepartment01.gr/ontology#Robbery"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.PoliceDepartment01.gr/ontology#Criminal"/>
+            <rdf:Description rdf:about="http://www.PoliceDepartment01.gr/ontology#Suspect"/>
+            <rdf:Description rdf:about="http://www.PoliceDepartment01.gr/ontology#Victim"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.PoliceDepartment01.gr/ontology#Interrogation_Officer"/>
+            <rdf:Description rdf:about="http://www.PoliceDepartment01.gr/ontology#Patrol_Officer"/>
+            <rdf:Description rdf:about="http://www.PoliceDepartment01.gr/ontology#Security_Officer"/>
+            <rdf:Description rdf:about="http://www.PoliceDepartment01.gr/ontology#Traffic_Officer"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
